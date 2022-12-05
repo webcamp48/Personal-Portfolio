@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Camp</title>
+    <!-- style css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- CDN font awesome -->
+    <script src="https://kit.fontawesome.com/5137a64c46.js" crossorigin="anonymous"></script>
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    
+
+</head>
+<body>
+    <!-- header -->
+    <div id="header">
+        <!-- nav-bar -->
+        <div class="container">
+            <nav>
+                <!-- <img src="./images/logo.png" alt="logo" class="logo"> -->
+                <h1>WebCamp</h1>
+                <ul id="sidemenu">
+                    <li><a href="#header" target="_blank">Home</a></li>
+                    <li><a href="#about" target="_blank">About</a></li>
+                    <li><a href="#services" target="_blank">Services</a></li>
+                    <li><a href="#portfolio" target="_blank">Portfolic</a></li>
+                    <li><a href="#contact" target="_blank">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <!-- header-text -->
+            <div class="header-text">
+                <p>Front End Web Developer</p>
+                <h1>Hi, I'm <span> Ali </span><br> From Pakistan</h1>
+            </div>
+        </div>
+    </div>
+    <!-- about us -->
+    <div id="about">
+        <div class="container2">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./images/ali.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am Muhammad Ali. I'm Proficient in Front end Web Designing using HTML | CSS | BOOTSTRAP | JAVASCRIPT | REACT JS | JQuery and Wordpress. I have completed 40+ projects internationally and locally as well. I have four years of experience. I have full grip Front End Web design. Also, designed a PSD mockup file so I know very well how to design an attractive and responsive website. I will give you 100% satisfaction in my service. Available 24/7.</p>
+
+                    <!-- skills -->
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web Interface</li>
+                            <li><span>Web Development</span><br>Web App Development</li>
+                            <li><span>App Development</span><br>Building Android/iOS apps Web Interface</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2022 - Current</span><br>UI/UX Design Training at ET Institute</li>
+                            <li><span>2020 - 2022</span><br>Team Load at Starapp LLC </li>
+                            <li><span>2018 - 2020</span><br>UI/UX Design Exeutive at Coin Digital Ltd</li>
+                            <li><span>2017 - 2018</span><br>Internship at eKart eCommerce</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2016-2018</span><br>MATRICULATION FROM GOVT HIGH SCHOOL</li>
+                            <li><span>2018-2020</span><br>INTERMEDIATE FROM SUPERIOR COLLAGE SHARAQPUR</li>
+                            <li><span>2020-Present</span><br>BACHELOR IN COMPUTER SCIENCE FROM THE UNIVERTSITY OF LAHORE</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----------Services------------ -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class='fas fa-code'></i>
+                    <h2>E-shop Websites</h2>
+                    <p>Our eCommerce websites are CMS-based and generate sales. Our team optimizes the website and improves its functionality.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class='fas fa-coffee'></i>
+                    <h2>Blogging Websites</h2>
+                    <p>The design is taken care of behind the scenes to make sure it works flawlessly. You can create a standalone or horizontal portal based on your needs.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class='fas fa-hand-holding-medical'></i>
+                    <h2>Business Websites</h2>
+                    <p>Based on today's business trends and patterns, we develop stunning and eye-catching online business websites.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -------portfolio--------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="./images/work-1.png" alt="">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi, in?</p>
+                        <a href=""><i class='far fa-edit'></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./images/work-2.png" alt="">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi, in?</p>
+                        <a href=""><i class='far fa-edit'></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./images/work-3.png" alt="">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi, in?</p>
+                        <a href=""><i class='far fa-edit'></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class='btn' target="_blank">See more</a>
+        </div>
+    </div>
+    <!-- -----------contact---------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="contact-left sec">
+                <h1>Contact Me</h1>
+                <p><i class='fas fa-paper-plane'></i> aliofficial0048#@gmail.com</p>
+                <p><i class='fas fa-phone-square-alt'></i> +923144167995</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/"><i class='fab fa-facebook'></i></a>
+                    <a href="https://twitter.com/home"><i class='fab fa-twitter-square'></i></a>
+                    <a href="https://www.instagram.com/"><i class='fab fa-instagram'></i></a>
+                    <a href="#"><i class='fab fa-linkedin'></i></a>
+                </div>
+                <a href="./images/resume_ali2.pdf" download class="btn btn2" target="_blank" >Download CV</a>
+            </div>
+            <div class="contact-right sec">
+                <form name = 'submit-to-google-sheet'>
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="button" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <!-- copyright -->
+    <div class="copyright">
+            <p>Copyright &#169; WebCamp. <i class="fas fa-heart"></i></p>
+        </div>
+    <!-- script -->
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <!-- sidebar -->
+    <script>
+        var sidemenu = document.getElementById('sidemenu');
+        function openmenu(){
+            sidemenu.style.right = "0px";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    <!-- contact form recived data -->
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxx-sCZHgDEV0KUJSQeLUYfRliZsuUfr9dGaoDZRhwqcunlaEvoYwqtPvsE3d_NMl5d/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById('msg')
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = 'Message send successfully !';
+                setTimeout(function(){
+                    msg.innerHTML = ''
+                },5000);
+                form.reset();
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html> 
